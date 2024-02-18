@@ -9,7 +9,6 @@ import Link from 'next/link';
 import { Actions } from '@/components/actions';
 import { Skeleton } from '@/components/ui/skeleton';
 
-import { Button } from '@/components/ui/button';
 import { Footer } from './footer';
 import { Overlay } from './overlay';
 
@@ -46,9 +45,9 @@ export const BoardCard = ({
           <Image src={imageUrl} alt={title} fill className="object-fit" />
           <Overlay />
           <Actions id={id} title={title} side="right">
-            <Button className="absolute right-1 top-1 opacity-0 group-hover:opacity-100 bg-transparent group-hover:bg-transparent transition-opacity px-3 py-2 outline-none">
+            <button className="absolute right-1 top-1 opacity-0 group-hover:opacity-100 transition-opacity px-3 py-2 outline-none">
               <MoreHorizontal className="text-white opacity-75 hover:opacity-100 transition-opacity" />
-            </Button>
+            </button>
           </Actions>
         </div>
         <Footer
